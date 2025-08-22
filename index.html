@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>One-Page Post-App</title>
+        <link rel="stylesheet" href="style.css" />
+        <script defer type="module" src="main.js"></script>
+        <script defer type="module" src="keys.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1>Post App</h1>
+                <ul>
+                    <li>User Name</li>
+                    <li>Refresh</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="create-post">
+                <h2>Create Post</h2>
+                <form action="#">
+                    <div class="create-post-container">
+                        <p class="create-post-title">
+                            <label for="title">Title</label><br />
+                            <input
+                                type="text"
+                                id="title"
+                                placeholder="Enter you title"
+                                required
+                            />
+                        </p>
+                        <p class="create-post-body">
+                            <label for="body">Content</label><br />
+                            <textarea
+                                name="body"
+                                id="body"
+                                required
+                                cols="30"
+                                rows="5"
+                                placeholder="Enter your content here"
+                            ></textarea>
+                        </p>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+
+            <hr />
+            <section id="fetched-posts">
+                <div class="post-container">
+                    <h2>Fetched Posts</h2>
+                    <div class="post-card">
+                        <div class="post-title">Consistency</div>
+                        <div class="post-body">The key to mastery</div>
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&lt;&lt;&copy;Savvycode&gt;&gt;</p>
+        </footer>
+    </body>
+</html>

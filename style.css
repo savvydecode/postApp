@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(
+        to right,
+        rgb(3, 9, 136),
+        rgb(12, 2, 103),
+        rgb(9, 1, 86),
+        rgb(6, 0, 50)
+    );
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    margin-top: 0;
+    box-shadow: 0px 5px 10px hsl(246, 100%, 17%);
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    z-index: 5;
+    background: linear-gradient(
+        to right,
+        rgb(3, 9, 136),
+        rgb(12, 2, 103),
+        rgb(9, 1, 86),
+        rgb(6, 0, 50)
+    );
+}
+
+nav {
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+nav h1 {
+    font-weight: bolder;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 1rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+nav li:last-child {
+    background: linear-gradient(to right, rgb(255, 165, 0), rgb(199, 54, 1));
+    padding: 4px 8px;
+    border-radius: 10px;
+}
+nav li:hover {
+    opacity: 80%;
+    
+}
+#fetched-posts {
+    background-color: white;
+}
+
+/* STYLING THE CREATE POST SECTION */
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+#create-post{
+    background: linear-gradient(to right, hsl(239, 31%, 65%), hsl(238, 30%, 50%));
+    backdrop-filter: blur(10px);
+    width: calc(100vw - 30px);
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+#create-post h2{
+    text-align: center;
+    color: white;
+}
+
+.create-post-container{
+    display: block;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+.create-post-container input, .create-post-container textarea{
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    padding: 0.5rem;
+}
+
+form button{
+    display: block;
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 1rem;
+    margin-top: 10px;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(to right, rgb(255, 165, 0), rgb(199, 54, 1));
+    color: white;
+    font-weight: bolder;
+
+}
+
+#fetched-posts{
+    width: 100%;
+    border-radius: 2rem 2rem 0 0;
+    flex-grow: 1;
+    
+}
+
+#fetched-posts h2{
+    color: rgb(12, 2, 103);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.post-card{
+    border: none;
+    margin: 1rem;
+    border-bottom: 3px solid hsl(246, 96%, 21%);
+    box-shadow: 0px 5px 10px hsl(246, 96%, 21%);
+    padding: 0.5rem;
+    border-radius: 10px;
+    
+}
+
+.post-card:nth-child(odd){
+    background-color: #ccc;
+}
+
+.post-title{
+    font-weight: bolder;
+    border-bottom: 2px solid hsl(246, 96%, 21%);
+    padding-bottom: 3px;
+}
+
+footer{
+    height: 2rem;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0px -5px 10px hsl(246, 96%, 21%);
+    width: 100%;
+    text-align: center;
+    backdrop-filter: blur(20px);
+    color:rgb(142, 146, 146);
+    background: linear-gradient(
+        to right,
+        rgb(3, 9, 136),
+        rgb(12, 2, 103),
+        rgb(9, 1, 86),
+        rgb(6, 0, 50)
+    );
+}
